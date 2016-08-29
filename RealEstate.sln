@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B471D7E2-7567-4BCE-BFEF-4A41C4C1ED36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{B32423EB-A327-4071-BA67-B515E4D1BCA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{25B2A873-78F4-4967-985E-E14D42C6FD4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Poco", "Poco", "{9F2652BD-7D51-4B7C-A289-19B08A767BB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4DB98277-6E0E-4CFC-99C1-1D96287143A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.DAL", "RealEstate.DAL\RealEstate.DAL.csproj", "{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.BLL", "RealEstate.BLL\RealEstate.BLL.csproj", "{16CD039B-F966-4DB0-A11D-52073D7899E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Poco", "RealEstate.Poco\RealEstate.Poco.csproj", "{26FDF376-A29B-407C-B02D-A7B8F330D9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Web", "RealEstate.Web\RealEstate.Web.csproj", "{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.TestHarness", "RealEstate.TestHarness\RealEstate.TestHarness.csproj", "{2B181F01-C51E-4A8E-B14F-F7F331577FE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CD039B-F966-4DB0-A11D-52073D7899E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CD039B-F966-4DB0-A11D-52073D7899E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CD039B-F966-4DB0-A11D-52073D7899E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CD039B-F966-4DB0-A11D-52073D7899E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FDF376-A29B-407C-B02D-A7B8F330D9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FDF376-A29B-407C-B02D-A7B8F330D9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FDF376-A29B-407C-B02D-A7B8F330D9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FDF376-A29B-407C-B02D-A7B8F330D9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B181F01-C51E-4A8E-B14F-F7F331577FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B181F01-C51E-4A8E-B14F-F7F331577FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B181F01-C51E-4A8E-B14F-F7F331577FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B181F01-C51E-4A8E-B14F-F7F331577FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3255A21-482F-4F5B-8EF3-7C1C5B1A1983} = {25B2A873-78F4-4967-985E-E14D42C6FD4D}
+		{16CD039B-F966-4DB0-A11D-52073D7899E8} = {B32423EB-A327-4071-BA67-B515E4D1BCA7}
+		{26FDF376-A29B-407C-B02D-A7B8F330D9A3} = {9F2652BD-7D51-4B7C-A289-19B08A767BB0}
+		{ACAB1E52-E183-48FB-8E16-3FDCDAA7D90F} = {B471D7E2-7567-4BCE-BFEF-4A41C4C1ED36}
+		{2B181F01-C51E-4A8E-B14F-F7F331577FE5} = {4DB98277-6E0E-4CFC-99C1-1D96287143A6}
+	EndGlobalSection
+EndGlobal
