@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RealEstate.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,5 +19,28 @@ namespace RealEstate.Web.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Contact(ContactViewModel contact)
+        {
+            return Json("An email has been sent.Someone will get contact you in the following days");
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Register(RegisterViewModel register)
+        {
+            return Json("An email has been sent.Someone will get contact you in the following days");
+        }
+
     }
 }

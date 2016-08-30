@@ -10,6 +10,11 @@ namespace RealEstate.TestHarness
     {
         static void Main(string[] args)
         {
+            bool? can_override = true;
+            //bool result = can_override ?? false;
+            var result = can_override ?? false;
+            Console.WriteLine("Result is : {0}",result);            
+            Console.ReadKey();
         }
     }
 }
