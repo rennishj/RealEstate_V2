@@ -10,10 +10,16 @@ namespace RealEstate.TestHarness
     {
         static void Main(string[] args)
         {
-            bool? can_override = true;
-            //bool result = can_override ?? false;
-            var result = can_override ?? false;
-            Console.WriteLine("Result is : {0}",result);            
+            string pv = "Test";
+            string[] pvs = pv.Split(',');
+            if (pvs != null && pvs.Count() > 0 && pvs.Any(p => p.Equals("AC")))
+            {
+                foreach (var item in pvs)
+                {
+                    Console.WriteLine("This has AC in it : {0}",item);
+                }
+            }
+                
             Console.ReadKey();
         }
     }
