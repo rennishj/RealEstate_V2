@@ -40,7 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="AppRoleEnum.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="RealEstateEnquiry.cs" />
+    <Compile Include="RealEstateException.cs" />
     <Compile Include="RealEstateUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

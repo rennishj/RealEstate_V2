@@ -11,9 +11,9 @@ namespace RealEstate.DAL
 {
     public class ConnectionHelper
     {
-        public static IDbConnection ConnString
+        public static IDbConnection CreateConnection()
         {
-            get { return ConfigurationManager.ConnectionStrings["RealEstate"].Connection(); }
+            return ConfigurationManager.ConnectionStrings["GiftsToKerala"].Connection();
         }
     }
 }

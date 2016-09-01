@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Insight.Database;
 
 namespace RealEstate.Web
 {
@@ -16,6 +17,9 @@ namespace RealEstate.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //Initialize the Insight Database Provider here
+            SqlInsightDbProvider.RegisterProvider();
+            log4net.Config.XmlConfigurator.Configure();
         }
     }
 }

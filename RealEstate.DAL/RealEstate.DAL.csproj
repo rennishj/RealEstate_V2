@@ -64,8 +64,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountDAL.cs" />
+    <Compile Include="AccountAccess.cs" />
     <Compile Include="ConnectionHelper.cs" />
+    <Compile Include="IAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

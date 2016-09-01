@@ -3,16 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title></title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+
+@{
+    
+    ViewBag.Title = "TBD";
+}
 <body>
     <div class="top-bar">
         <div class="top-bar-left">            
             <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">Site Title</li>
+                <li class="menu-text">@ViewBag.Title</li>
                 <li>
                     <a href="#">One</a>
                     <ul class="menu vertical">
