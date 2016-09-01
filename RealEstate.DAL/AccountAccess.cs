@@ -20,16 +20,16 @@ namespace RealEstate.DAL
             this.RealEstateDB = this.Connection.AsParallel<IAccount>();
         }
 
-        public async Task CreateComment(RealEstateEnquiry comment)
+        public async Task CreateRealEstateEnquiry(RealEstateEnquiry enquiry)
         {
             try
             {
-                await RealEstateDB.AddComment(comment.FirstName, comment.LastName, comment.Email, comment.Phone, comment.Comment);
+                await RealEstateDB.CreateRealEstateEnquiry(enquiry.FirstName, enquiry.LastName, enquiry.Email, enquiry.Phone, enquiry.Comment);
             }
             catch (Exception ex)
             {
-                string fullName = comment.FirstName + " " + comment.LastName;
-                logger.Error(string.Format("Error creating the Enquiry for customer:{0} with email:{1} and phone:{2}",fullName, comment.Email,comment.Phone), ex);
+                string fullName = enquiry.FirstName + " " + enquiry.LastName;
+                logger.Error(string.Format("Error creating the Enquiry for customer:{0} with email:{1} and phone:{2}",fullName, enquiry.Email,enquiry.Phone), ex);
                 throw new RealEstateException("Couldnot create the Enquiry");
             }
         }

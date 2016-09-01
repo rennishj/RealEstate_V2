@@ -1,0 +1,47 @@
+﻿@model RealEstate.Web.Models.EnquiryViewModel
+
+@{
+    ViewBag.Title = "Create Enquiry";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Enquiry", "Enquiry", FormMethod.Post, new { data_abide = " " }))
+{
+    <div class="row">
+        <div class="small-3 columns">
+            @Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName, new { @class="first_name"})
+        </div>
+        <div class="small-3 columns">
+            @Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName, new { @class = "last_name" })
+        </div>
+        <div class="small-3 columns">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "email" })
+        </div>
+        <div class="small-3 columns">
+            @Html.LabelFor(m => m.Phone)
+            @Html.TextBoxFor(m => m.Phone, new { @class = "phone" })
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            @Html.LabelFor(m => m.Comment)
+            @Html.TextAreaFor(m => m.Comment,new{@class="realestate-comment"})
+        </div>
+    </div>
+   
+    <div class="row">
+        <div class="small-3 right columns">
+            <input type="submit" class="button" value="Add Comment" />
+            <input type="submit" class="button" value="Cancel" />
+        </div>
+    </div>
+    
+
+}
+
+

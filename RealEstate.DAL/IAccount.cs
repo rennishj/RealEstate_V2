@@ -4,6 +4,6 @@ namespace RealEstate.DAL
 {    
     public interface IAccount 
     {
-        Task AddComment(string FirstName, string LastName, string Email, string Phone, string Comment);
+        Task CreateRealEstateEnquiry(string FirstName, string LastName, string Email, string Phone, string Comment);
     }
 }
