@@ -6,26 +6,27 @@
 
 <h2>@ViewBag.Title</h2>
 
-@using (Html.BeginForm("Enquiry", "Enquiry", FormMethod.Post, new { data_abide = " " }))
+@using (Html.BeginForm("Add", "Enquiry", FormMethod.Post, new { data_abide = "data_abide" }))
 {
     <div class="row">
-        <div class="small-3 columns">
+        <div class="small-6 columns">
             @Html.LabelFor(m => m.FirstName)
-            @Html.TextBoxFor(m => m.FirstName, new { @class="first_name"})
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "first_name", required = "required" })
         </div>
-        <div class="small-3 columns">
+        <div class="small-6 columns">
             @Html.LabelFor(m => m.LastName)
             @Html.TextBoxFor(m => m.LastName, new { @class = "last_name" })
         </div>
-        <div class="small-3 columns">
+    </div>
+    <div class="row">
+        <div class="small-6 columns">
             @Html.LabelFor(m => m.Email)
             @Html.TextBoxFor(m => m.Email, new { @class = "email" })
         </div>
-        <div class="small-3 columns">
+        <div class="small-6 columns">
             @Html.LabelFor(m => m.Phone)
             @Html.TextBoxFor(m => m.Phone, new { @class = "phone" })
         </div>
-        
     </div>
     <div class="row">
         <div class="small-12 columns">

@@ -17,6 +17,11 @@ namespace RealEstate.BLL
 
         public AccountAccess AccountDAL { get; set; }
 
+        /// <summary>
+        /// This is a passthrough to the DataAcess Layer
+        /// </summary>
+        /// <param name="enquiry"></param>
+        /// <returns></returns>
         public async  Task RealEstateEnquiryCreate(RealEstateEnquiry enquiry)
         {
             await AccountDAL.CreateRealEstateEnquiry(enquiry);

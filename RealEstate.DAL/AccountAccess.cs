@@ -20,6 +20,11 @@ namespace RealEstate.DAL
             this.RealEstateDB = this.Connection.AsParallel<IAccount>();
         }
 
+       /// <summary>
+       /// Creates a Real Estate Enquiry
+       /// </summary>
+       /// <param name="enquiry">The RealEstateEnquiry Object</param>
+       /// <returns>Nothing</returns>
         public async Task CreateRealEstateEnquiry(RealEstateEnquiry enquiry)
         {
             try
