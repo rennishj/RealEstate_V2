@@ -1,12 +1,12 @@
 ﻿@model RealEstate.Web.Models.EnquiryViewModel
 
 @{
-    ViewBag.Title = "Create Enquiry";
+    ViewBag.Title = "Add Enquiry";
 }
 
-<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Title</h3>
 
-@using (Html.BeginForm("Add", "Enquiry", FormMethod.Post, new { data_abide = "data_abide" }))
+@using (Html.BeginForm("Add", "Enquiry", FormMethod.Post, new { data_abide = ""}))
 {
     <div class="row">
         <div class="small-6 columns">
@@ -15,23 +15,23 @@
         </div>
         <div class="small-6 columns">
             @Html.LabelFor(m => m.LastName)
-            @Html.TextBoxFor(m => m.LastName, new { @class = "last_name" })
+            @Html.TextBoxFor(m => m.LastName, new { @class = "last_name", required = "required" })
         </div>
     </div>
     <div class="row">
         <div class="small-6 columns">
             @Html.LabelFor(m => m.Email)
-            @Html.TextBoxFor(m => m.Email, new { @class = "email" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "email",  required = "required",pattern=@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" })
         </div>
         <div class="small-6 columns">
             @Html.LabelFor(m => m.Phone)
-            @Html.TextBoxFor(m => m.Phone, new { @class = "phone" })
+            @Html.TextBoxFor(m => m.Phone, new { @class = "phone" , required = "required"})
         </div>
     </div>
     <div class="row">
         <div class="small-12 columns">
             @Html.LabelFor(m => m.Comment)
-            @Html.TextAreaFor(m => m.Comment,new{@class="realestate-comment"})
+            @Html.TextAreaFor(m => m.Comment, new { @class = "realestate-comment", required = "required" })
         </div>
     </div>
    
